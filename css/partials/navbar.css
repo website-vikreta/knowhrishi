@@ -50,16 +50,20 @@ nav .nav-link{
 nav .nav-link > a,
 nav .nav-link > label{
     line-height: 3rem;
-    color: var(--black-color2);
+    color: var(--primary-color);
+    font-weight: 500;
     padding: 0;
     padding-left: 0.8rem;
     font-size: 0.95rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: transform 0.2s linear;
+    cursor: pointer;
 }
 nav .nav-link > a > i{
     margin-left: 0.2rem;
+    color: var(--primary-color);
 }
 nav .nav-link:hover > a{
     transform: scale(1.1);
@@ -157,7 +161,7 @@ nav .hamburger-menu div{
     width: 1.6rem;
     height: 3px;
     border-radius: 3px;
-    background: var(--black-color2);
+    background: var(--primary-color);
     position: relative;
     z-index: 1001;
     transition: 0.5s;
@@ -168,7 +172,7 @@ nav .hamburger-menu div:after{
     position: absolute;
     width: inherit;
     height: inherit;
-    background: var(--black-color2);
+    background: var(--primary-color);
     border-radius: 3px;
     transition: 0.5s;
 }
@@ -217,10 +221,6 @@ nav .show, nav input[id^=btn]{
 
 /* responsive design */
 @media only screen and (max-width: 920px){
-    nav .container,
-    nav .container-fluid{
-        padding: 0 20px !important;
-    }
     nav .logo-container img{
         height: 70%;
     }
@@ -240,10 +240,10 @@ nav .show, nav input[id^=btn]{
     nav .nav-btn{
         position: fixed;
         height: calc(100vh - 60px);
-        top: 60px;
+        top: 70px;
         left: 0;
         width: 100%;
-        background: var(--black-color2);
+        background: var(--primary-color);
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
@@ -275,13 +275,16 @@ nav .show, nav input[id^=btn]{
     nav .nav-link > a,
     nav .nav-link > label{
         line-height: 1;
-        padding: 1.6rem 2rem;
+        padding: 1rem 2rem;
         color: var(--white-color);
+    }
+    nav .nav-link.first-link{
+        margin-top: 20px !important;
     }
     nav .nav-link:hover > a,
     nav .nav-link:hover > label{
         transform: scale(1);
-        background: var(--black-color3);
+        background: var(--secondary-color);
     }
     nav .dropdown, nav .dropdown.second{
         position: initial;

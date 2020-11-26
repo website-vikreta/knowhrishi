@@ -1,7 +1,7 @@
 /* ========================================================== */
 /* GOOGLE FONTS */
 /* ========================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Open+Sans:wght@400;700&family=Poppins:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;600;800&display=swap');
 /* ! weights */
 /* 
     poppins: 400 600 800
@@ -36,8 +36,8 @@
     --white-color: #fff;
     --whitesmoke-color: #f5f5f5;
     --gray-color: #ddd;
-    --blue-color: #294cff;
     --primary-color: #24243e;
+    --secondary-color: #302b63;
     
     /* box-shadows */
     --box-shadow: 0px 15px 45px -9px rgba(0,0,0,.2);

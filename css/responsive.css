@@ -2,29 +2,139 @@
 /* Large devices (laptops/desktops) */
 /* =================================================== */
 @media only screen and (max-width: 1200px) {
-   
+    nav{
+        padding: 5px 20px;
+    }
+   .container{
+       padding: 0 20px;
+   }
+   section{
+       padding: 50px 0;
+   }
+   /* hero */
+   .hero .curve-wrapper{
+    height: calc(100% - 150px);
+   }
+   .hero .curve{
+        bottom: -150px;
+        height: 150px;
+    }
+    .hero .image{
+        width: 130px;
+        height: 130px;
+    }
+    .hero h3{
+        font-size: 1.4rem;
+    }
+    .hero h1{
+        font-size: 45px;
+    }
+    .hero p{
+        font-size: 0.9rem;
+    }
+    .hero a{
+        padding: 0.5rem 1.2rem;
+        font-size: 0.8rem;
+    }
+    /* about me */
+    .heading h1{
+        font-size: 2.5rem;
+    }
+    .heading .line i{
+        font-size: 10px;
+    }
+    .heading .line span{
+        width: 90px;
+        height: 4px;
+    }
 }
 
 /* =================================================== */
 /* Medium devices (landscape tablets) */
 /* =================================================== */
 @media only screen and (max-width: 993px) {
-   
+    
 }
 
 /* =================================================== */
 /* Small devices (portrait tablets and large phones) */
 /* =================================================== */
 @media only screen and (max-width: 768px) {
-   
+    /* hero */
+    .hero .curve-wrapper{
+        height: calc(100% - 100px);
+    }
+    .hero .curve{
+        bottom: -100px;
+        height: 100px;
+    }
+    .hero .content{
+        width: calc(100% - 2rem);
+    }
+   .hero .image{
+       width: 120px;
+       height: 120px;
+   }
+   .hero p{
+       max-width: 600px;
+       margin: auto;
+       margin-bottom: 10px;
+   }
+   /* about me */
+   .heading h1{
+       font-size: 2.2rem;
+   }
+   .heading .line i{
+       font-size: 8px;
+   }
+   .heading .line span{
+       height: 3px;
+   }
+   .about-me .image{
+       width: 50%;
+   }
+   .about-me .content{
+       padding: 0 20px;
+   }
+   .about-me p{
+       font-size: 0.9rem;
+   }
 }
 
 /* =================================================== */
 /* Extra small devices (phones) */
 /* =================================================== */
 @media only screen and (max-width: 600px) {
-   
+    section{
+        padding: 20px 0;
+    }
+    .about-me .image{
+        width: 70%;
+    }
 }
 @media only screen and (max-width: 500px) {
-   
+    /* hero */
+    .hero .curve-wrapper{
+        height: calc(100% - 70px);
+    }
+    .hero .curve{
+        bottom: -70px;
+        height: 70px;
+    }
+    .hero .content{
+        width: calc(100% - 50px);
+    }
+    .hero h1{
+        font-size: 35px;
+    }
+    .hero h3{
+        font-size: 1.2rem;
+    }
+    .hero p{
+        font-size: 0.8rem;
+    }
+    /* about me */
+    .about-me .content{
+        padding: 0 10px;
+    }
 }
