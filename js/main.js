@@ -50,5 +50,35 @@ $(document).ready(function () {
         return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
     }
 
-
+    // =================================================
+    // project slider
+    // =================================================
+    $('.project-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        adaptiveHeight: true,
+        prevArrow: $(".project-slider-wrapper #btn-left"),
+        nextArrow: $(".project-slider-wrapper #btn-right"),
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
 })

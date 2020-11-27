@@ -58,7 +58,9 @@
 /* Medium devices (landscape tablets) */
 /* =================================================== */
 @media only screen and (max-width: 993px) {
-    
+    .projects{
+        padding: 75px 10px;
+    }
 }
 
 /* =================================================== */
@@ -151,6 +153,19 @@
     }
     .about-me{
         padding: 20px 0 !important;
+    }
+    .projects{
+        padding: 30px 0 !important;
+    }
+    .projects .project-slider-wrapper .slider-btns{
+        top: calc(50% + 40px);
+    }
+    .projects .slick-track{
+        padding-top: 50px;
+        padding-bottom: 30px !important;
+    }
+    .projects .slick-slide{
+        margin-bottom: 30px !important;
     }
 }
 @media only screen and (max-width: 500px) {
