@@ -20,6 +20,12 @@ $(document).ready(function () {
         return false;
     });
 
+    // navlink click
+    $(".nav-link a").on('click', function () {
+        if ($("#toggle").is(':checked')) {
+            $("#toggle").click();
+        }
+    })
 
     // =================================================
     // hero scroll

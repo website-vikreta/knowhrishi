@@ -61,6 +61,36 @@
     .projects{
         padding: 75px 10px;
     }
+    .skills .skill-wrapper .skill-bar.width-10{
+        width: 10%;
+    }
+    .skills .skill-wrapper .skill-bar.width-20{
+        width: 20%;
+    }
+    .skills .skill-wrapper .skill-bar.width-30{
+        width: 30%;
+    }
+    .skills .skill-wrapper .skill-bar.width-40{
+        width: 40%;
+    }
+    .skills .skill-wrapper .skill-bar.width-50{
+        width: 50%;
+    }
+    .skills .skill-wrapper .skill-bar.width-60{
+        width: 60%;
+    }
+    .skills .skill-wrapper .skill-bar.width-70{
+        width: 70%;
+    }
+    .skills .skill-wrapper .skill-bar.width-80{
+        width: 80%;
+    }
+    .skills .skill-wrapper .skill-bar.width-90{
+        width: 90%;
+    }
+    .skills .skill-wrapper .skill-bar.width-100{
+        width: 100%;
+    }
 }
 
 /* =================================================== */
@@ -120,6 +150,18 @@
    }
    .skills .skill-wrapper .domain{
        font-size: 0.9rem;
+   }
+   /* certificated */
+   .certificates .certs{
+       justify-content: flex-start;
+   }
+   .certificates .card{
+       width: 100% !important;
+       min-width: initial;
+       max-width: initial;
+       min-height: initial;
+       flex-grow: 1;
+       margin: 0.5rem 0;
    }
    /* experience */
     .experience .margin-top{
