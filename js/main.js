@@ -30,5 +30,25 @@ $(document).ready(function () {
         scroll.style.transform = `scaleY(${value})`;
     })
 
+    // =================================================
+    // Sections reveal on scroll
+    // =================================================
+    $(window).on('scroll', function () {
+        $("section").each(function () {
+            if (isScrolledIntoView($(this))) {
+                $(this).addClass("show");
+            }
+        });
+    });
+    function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+
 
 })

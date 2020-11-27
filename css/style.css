@@ -173,3 +173,79 @@
     color: var(--primary-color);
     background: white;
 }
+
+/* ! =================================== */
+/* ! MY SKILLS */
+/* ! =================================== */
+.skills h4{
+    color: var(--secondary-color);
+    font-family: var(--poppins);
+    font-size: 1.3rem;
+}
+.skills .skill-wrapper{
+    position: relative;
+    margin-bottom: 2rem;
+}
+.skills .skill-wrapper .domain{
+    margin: 0;
+    font-family: var(--montserrat);
+    font-weight: 500;
+}
+.skills .skill-wrapper .skill{
+    width: 100%;
+    height: 10px;
+    background: var(--gray-color);
+    border-radius: 10px;
+}
+.skills .skill-wrapper .skill-bar{
+    width: 0;
+    height: 10px;
+    border-radius: 10px;
+    background: #5C258D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    transition: width 2s ease;
+}
+.skills .skill-wrapper .skill-bar:after{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background: white;
+    border: 2px solid var(--primary-color);
+    top: 50%;
+    right: -15px;
+    transform: translate(-50%, -50%);
+}
+.skills.show .skill-wrapper .skill-bar.width-10{
+    width: 10%;
+}
+.skills.show .skill-wrapper .skill-bar.width-20{
+    width: 20%;
+}
+.skills.show .skill-wrapper .skill-bar.width-30{
+    width: 30%;
+}
+.skills.show .skill-wrapper .skill-bar.width-40{
+    width: 40%;
+}
+.skills.show .skill-wrapper .skill-bar.width-50{
+    width: 50%;
+}
+.skills.show .skill-wrapper .skill-bar.width-60{
+    width: 60%;
+}
+.skills.show .skill-wrapper .skill-bar.width-70{
+    width: 70%;
+}
+.skills.show .skill-wrapper .skill-bar.width-80{
+    width: 80%;
+}
+.skills.show .skill-wrapper .skill-bar.width-90{
+    width: 90%;
+}
+.skills.show .skill-wrapper .skill-bar.width-100{
+    width: 100%;
+}

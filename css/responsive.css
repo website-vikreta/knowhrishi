@@ -47,6 +47,10 @@
         width: 90px;
         height: 4px;
     }
+    /* skills */
+    .skills{
+        padding: 75px 20px;
+    }
 }
 
 /* =================================================== */
@@ -99,6 +103,20 @@
    .about-me p{
        font-size: 0.9rem;
    }
+   /* skills */
+   .skills{
+       padding: 50px 10px;
+   }
+   .skills h4{
+       font-size: 1.2rem;
+   }
+   .skills p{
+       margin-bottom: 3rem;
+       font-size: 0.9rem;
+   }
+   .skills .skill-wrapper .domain{
+       font-size: 0.9rem;
+   }
 }
 
 /* =================================================== */
@@ -106,10 +124,13 @@
 /* =================================================== */
 @media only screen and (max-width: 600px) {
     section{
-        padding: 20px 0;
+        padding: 50px 0;
     }
     .about-me .image{
         width: 70%;
+    }
+    .about-me{
+        padding: 20px 0 !important;
     }
 }
 @media only screen and (max-width: 500px) {
