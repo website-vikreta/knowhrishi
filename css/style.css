@@ -249,3 +249,57 @@
 .skills.show .skill-wrapper .skill-bar.width-100{
     width: 100%;
 }
+
+/* ! =================================== */
+/* ! EXPERIENCE */
+/* ! =================================== */
+.experience .heading{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.experience .heading .line{
+    padding: 0 calc(50% - 60px);
+}
+.experience .card{
+    flex: 1;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow4);
+    padding: 2rem;
+    position: relative;
+    height: 100%;
+}
+.experience .image{
+    width: 100px;
+    height: 100px;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    border-radius: 5px;
+}
+.experience .image img{
+    height: 100%;
+}
+.experience .job-title{
+    padding-left: 1rem;
+}
+.experience .job-title .company{
+    font-family: var(--montserrat);
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 100%;
+}
+.experience .job-title .job{
+    margin: 2px 0;
+}
+.experience .job-title .duration{
+    font-size: 0.8rem;
+    margin: 0;
+}
+.experience .job-description{
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    margin-top: 1rem;
+}
