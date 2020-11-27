@@ -139,6 +139,46 @@
     .experience .job-title .duration{
         font-size: 0.7rem;
     }
+    /* achievement */
+    .achievement-image{
+        display: none;
+    }
+    .achievement-slider-wrapper .slick-track{
+        padding-top: 50px;
+    }
+    .achievement-slider-wrapper{
+        margin-left: 0 !important;
+    }
+    .achievement-slider-wrapper .card .image{
+        max-height: 100px;
+    }
+    .achievement-slider-wrapper .card .image img{
+        max-height: 100px;
+    }
+    .achievement-slider-wrapper .card{
+        padding: 1rem;
+        padding-top: calc(50px + 1rem) !important;
+    }
+    .achievement-slider-wrapper .description{
+        font-size: 0.8rem;
+    }
+    .achievement-slider-wrapper .slider-btns{
+        transform: translateX(-50%);
+    }
+    /* contact */
+    .contact{
+        margin-top: 100px;
+    }
+    .contact .logo{
+        max-width: 250px;
+    }
+    .contact .contact-me h5{
+        font-size: 1.2rem;
+        border-bottom: none;
+    }
+    .contact-me p{
+        font-size: 0.8rem;
+    }
 }
 
 /* =================================================== */
@@ -158,14 +198,14 @@
         padding: 30px 0 !important;
     }
     .projects .project-slider-wrapper .slider-btns{
-        top: calc(50% + 40px);
+        top: calc(50% + 30px);
     }
     .projects .slick-track{
         padding-top: 50px;
-        padding-bottom: 30px !important;
+        padding-bottom: 0 !important;
     }
     .projects .slick-slide{
-        margin-bottom: 30px !important;
+        margin-bottom: 10px !important;
     }
 }
 @media only screen and (max-width: 500px) {
@@ -196,5 +236,23 @@
     /* experience */
     .experience .card{
         padding: 1.5rem;
+    }
+    /* contact */
+    .contact .contact-me{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .contact-me h5{
+        margin: 0;
+    }
+    .contact .contact-me .mail{
+        margin-top: 1rem;
+    }
+    /* footer */
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

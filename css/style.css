@@ -220,7 +220,7 @@
     background: white;
     border: 2px solid var(--primary-color);
     top: 50%;
-    right: -5px;
+    right: -13px;
     transform: translate(-50%, -50%);
 }
 .skills.show .skill-wrapper .skill-bar.width-10{
@@ -311,13 +311,15 @@
 /* ! =================================== */
 /* ! PROJECTS */
 /* ! =================================== */
-.projects .heading{
+.projects .heading,
+.achievement .heading{
     margin: auto;
     text-align: center;
     margin-bottom: 20px;
 }
-.projects .heading .line{
-    padding: 0 calc(50% - 60px);
+.projects .heading .line,
+.achievement .heading .line{
+    padding: 0 calc(50% - 50px);
 }
 .projects .image.illu{
     width: 90%;
@@ -337,7 +339,7 @@
     transform: translate(-50%, -50%);
     width: calc(100% + 20px);
 }
-.projects .project-slider-wrapper .slider-btns button{
+.slider-btns button{
     width: 35px;
     height: 35px;
     border-radius: 50px;
@@ -349,10 +351,10 @@
     color: var(--primary-color);
     box-shadow: var(--box-shadow) !important;
 }
-.projects .project-slider-wrapper .slider-btns button:active{
+.slider-btns button:active{
     transform: scale(0.9);
 }
-.projects .project-slider-wrapper .slider-btns button i{
+.slider-btns button i{
     font-size: 1rem;
 }
 .projects .slick-track{
@@ -375,23 +377,23 @@
 {
     height: inherit !important;
 }
-.projects .slick-dots li{
+.slick-dots li{
     width: 10px;
     height: 10px;
 }
-.projects .slick-dots li.slick-active{
+.slick-dots li.slick-active{
     width: 25px;
 }
-.projects .slick-dots li button:before{
+.slick-dots li button:before{
     display: none;
 }
-.projects .slick-dots li button{
+.slick-dots li button{
     width: 100%;
     height: 100%;
     background: var(--gray-color);
     border-radius: 50px;
 }
-.projects .slick-dots li.slick-active button{
+.slick-dots li.slick-active button{
     background: var(--primary-color)
 }
 .projects .card .image{
@@ -420,4 +422,167 @@
 .projects .card .description{
     font-size: 0.85rem;
     margin-top: 10px;
+}
+
+/* ! =================================== */
+/* ! ACHIEVEMENTS */
+/* ! =================================== */
+.achievement-slider-wrapper .slick-track{
+    padding-top: 80px;
+    padding-bottom: 20px !important;
+    display: flex !important;
+    margin-top: 20px;
+}
+.achievement-slider-wrapper .slick-slide{
+    margin-bottom: 0;
+    height: inherit;
+}
+.achievement-slider-wrapper .slick-dots{
+    /* border: 1px solid    ; */
+}
+.achievement-slider-wrapper{
+    margin-left: -1rem;
+}
+.achievement-slider-wrapper .card{
+    position: relative; 
+    border: none;
+    box-shadow: var(--box-shadow2);
+    margin: 0 1rem !important;
+    padding-top: calc(75px + 1rem) !important;
+    padding: 2rem;
+    text-align: center;
+}
+.achievement-slider-wrapper .card .image{
+    position: absolute;
+    max-height: 150px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+.achievement-slider-wrapper .card .image img{
+    height: 100%;
+    width: 100%;
+    max-height: 150px;
+}
+.achievement-slider-wrapper .title{
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0;
+}
+.achievement-slider-wrapper .date{
+    margin: 0;
+}
+.achievement-slider-wrapper .description{
+    font-size: 0.9rem;
+    max-width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+}
+.achievement-slider-wrapper .slider-btns{
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-51%);
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/* ! =================================== */
+/* ! CONTACT */
+/* ! =================================== */
+.contact{
+    position: relative;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    padding: 50px 0;
+}
+.contact .move-up{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact .move-up a{
+    width: 40px !important;
+    height: 40px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid var(--primary-color);
+    box-shadow: var(--box-shadow5) !important;
+    overflow: hidden;
+    color: var(--primary-color);
+}
+.contact .move-up a i{
+    animation: up 1s infinite ease;
+}
+@keyframes up{
+    0%{
+        margin-top: 50px;
+    }
+    100%{
+        margin-top: -50px;
+    }
+}
+.contact .logo{
+    max-width: 300px;
+    margin: auto;
+    filter: invert(1);
+}
+.contact .contact-me{
+    max-width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 2rem auto;
+}
+.contact .contact-me h5{
+    font-family: var(--montserrat);
+    font-weight: 700;
+    border-bottom: 1px solid;
+    padding-bottom: 0.5rem;
+}
+.contact-me p{
+    margin: 0;
+    font-size: 0.9rem;
+    color: white;
+}
+.contact-me p a{
+    color: white;
+}
+.contact .social a{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid var(--primary-color);
+    margin: 5px;
+    border-radius: 50px;
+    color: var(--primary-color);
+    background: white;
+    transition: transform .5s;
+}
+.contact .social a:hover{
+    transform: scale(1.1) translateY(-10px);
+}
+
+
+/* ! =================================== */
+/* ! FOOTER */
+/* ! =================================== */
+footer{
+    background: var(--primary-color);
+    color: whitesmoke;
+    font-size: 0.8rem;
 }

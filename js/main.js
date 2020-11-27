@@ -58,7 +58,7 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: true,
-        adaptiveHeight: true,
+        adaptiveHeight: false,
         prevArrow: $(".project-slider-wrapper #btn-left"),
         nextArrow: $(".project-slider-wrapper #btn-right"),
         responsive: [
@@ -80,5 +80,13 @@ $(document).ready(function () {
             // settings: "unslick"
             // instead of a settings object
         ]
+    });
+    $('.achievement-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        prevArrow: $(".achievement-slider-wrapper #btn-left"),
+        nextArrow: $(".achievement-slider-wrapper #btn-right"),
     });
 })
